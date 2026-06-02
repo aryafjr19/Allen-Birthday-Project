@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Good Night, My Love 💙</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600&family=Pacifico&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Fredoka',sans-serif;
+background:linear-gradient(
+180deg,
+#081426 0%,
+#10254a 40%,
+#1f3f75 100%
+);
+color:white;
+overflow-x:hidden;
+}
+
+.stars{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background-image:
+radial-gradient(white 1px, transparent 1px);
+background-size:50px 50px;
+opacity:.35;
+pointer-events:none;
+animation:moveStars 120s linear infinite;
+}
+
+@keyframes moveStars{
+from{
+transform:translateY(0);
+}
+to{
+transform:translateY(-800px);
+}
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:30px;
+}
+
+.snoopy{
+width:300px;
+animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+50%{
+transform:translateY(-20px);
+}
+}
+
+.hero h1{
+font-family:'Pacifico';
+font-size:4rem;
+margin-top:20px;
+}
+
+.hero p{
+max-width:700px;
+margin-top:20px;
+font-size:1.2rem;
+line-height:1.8;
+}
+
+.btn{
+margin-top:35px;
+padding:15px 35px;
+border:none;
+border-radius:999px;
+background:#ffd54f;
+color:#081426;
+font-weight:bold;
+font-size:1rem;
+cursor:pointer;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+.letter{
+max-width:900px;
+margin:auto;
+padding:120px 30px;
+}
+
+.letter-card{
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(15px);
+padding:50px;
+border-radius:30px;
+box-shadow:0 15px 40px rgba(0,0,0,.3);
+}
+
+.letter h2{
+font-family:'Pacifico';
+font-size:3rem;
+margin-bottom:30px;
+}
+
+.letter p{
+line-height:2;
+font-size:1.15rem;
+}
+
+.gallery{
+padding:100px 0;
+}
+
+.gallery h2{
+font-family:'Pacifico';
+font-size:3rem;
+text-align:center;
+margin-bottom:50px;
+}
+
+.slider{
+overflow-x:auto;
+scroll-snap-type:x mandatory;
+padding-bottom:20px;
+}
+
+.slider::-webkit-scrollbar{
+height:10px;
+}
+
+.slider::-webkit-scrollbar-thumb{
+background:white;
+border-radius:20px;
+}
+
+.slides{
+display:flex;
+gap:30px;
+padding:20px;
+}
+
+.slides img{
+width:340px;
+height:450px;
+object-fit:cover;
+
+background:white;
+padding:15px 15px 60px 15px;
+
+border-radius:10px;
+
+scroll-snap-align:center;
+
+box-shadow:
+0 15px 40px rgba(0,0,0,.4);
+
+transition:.4s;
+}
+
+.slides img:hover{
+transform:
+translateY(-10px)
+rotate(0deg)
+scale(1.03);
+}
+
+.ending{
+padding:150px 20px;
+text-align:center;
+}
+
+.ending h2{
+font-family:'Pacifico';
+font-size:3rem;
+margin-bottom:20px;
+}
+
+.ending p{
+font-size:1.2rem;
+}
+
+.moon{
+font-size:5rem;
+margin-bottom:20px;
+animation:float 4s infinite ease-in-out;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="stars"></div>
+
+<audio id="bgMusic" loop>
+<source src="images/birthday-song.mp3" type="audio/mpeg">
+</audio>
+
+<section class="hero">
+
+<img src="images/snoopy.png" class="snoopy">
+
+<h1>Good Night, My Love 🌙</h1>
+
+<p>
+Happy Birthday to the person who makes every day worth waiting for.
+Miles apart, but always close to my heart.
+</p>
+
+<button class="btn" id="openGift">
+💙 Open Your Birthday Gift
+</button>
+
+</section>
+
+<section class="letter" id="letter">
+
+<div class="letter-card">
+
+<h2>Dear My Love,</h2>
+
+<p>
+
+Happy birthday, my love. 💙
+
+<br><br>
+
+Miles between us, but you're still the closest thing to my heart.
+LDR is hard, but loving you never is.
+
+<br><br>
+
+Thank you for every good morning text,
+every late-night call,
+every random conversation,
+every laugh,
+and every effort you make for us.
+
+<br><br>
+
+You make distance feel smaller.
+
+You make ordinary days feel exciting.
+
+You make me feel safe,
+understood,
+and loved.
+
+<br><br>
+
+I know we can't celebrate side by side yet,
+but I hope this little website reminds you
+how much you mean to me.
+
+<br><br>
+
+I can't wait until distance becomes
+just another story we tell.
+
+<br><br>
+
+Until then,
+I'll keep choosing you.
+
+Every day.
+
+💙
+
+<br><br>
+
+Happy Birthday.
+
+</p>
+
+</div>
+
+</section>
+
+<section class="gallery">
+
+<h2>Our Memories 📸</h2>
+
+<div class="slider">
+
+<div class="slides">
+
+<img src="images/photo1.jpg">
+
+<img src="images/photo2.jpg">
+
+<img src="images/photo3.jpg">
+
+<img src="images/photo4.jpg">
+
+</div>
+
+</div>
+
+</section>
+
+<section class="ending">
+
+<div class="moon">🌙</div>
+
+<h2>See You In My Dreams</h2>
+
+<p>
+Until distance becomes a memory.
+<br><br>
+With Love,
+<br>
+Arya 💙
+</p>
+
+</section>
+
+<script>
+
+const button=document.getElementById("openGift");
+const music=document.getElementById("bgMusic");
+
+button.addEventListener("click",()=>{
+
+music.play();
+
+document.getElementById("letter")
+.scrollIntoView({
+behavior:"smooth"
+});
+
+});
+
+</script>
+
+</body>
+</html>
